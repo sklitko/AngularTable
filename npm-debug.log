@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@angular2/common',
+1 verbose cli   '--save' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @angular2/common
+8 silly fetchNamedPackageData @angular2/common
+9 silly mapToRegistry name @angular2/common
+10 silly mapToRegistry scope (from package name) @angular2
+11 verbose mapToRegistry no registry URL found in name for scope @angular2
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@angular2/common',
+14 silly mapToRegistry   scope: '@angular2',
+14 silly mapToRegistry   escapedName: '@angular2%2fcommon',
+14 silly mapToRegistry   name: '@angular2/common',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri http://registry.npmjs.org/@angular2%2fcommon
+16 verbose request uri http://registry.npmjs.org/@angular2%2fcommon
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 12:04:14
+19 verbose request id ad58468f53a89a3a
+20 http request GET http://registry.npmjs.org/@angular2%2fcommon
+21 http 404 http://registry.npmjs.org/@angular2%2fcommon
+22 verbose headers { 'content-type': 'application/json',
+22 verbose headers   'cache-control': 'max-age=0',
+22 verbose headers   'content-length': '21',
+22 verbose headers   'accept-ranges': 'bytes',
+22 verbose headers   date: 'Mon, 13 Mar 2017 10:06:41 GMT',
+22 verbose headers   age: '0',
+22 verbose headers   'x-served-by': 'cache-hhn1524-HHN',
+22 verbose headers   'x-cache': 'MISS, MISS from squid-p',
+22 verbose headers   'x-cache-hits': '0',
+22 verbose headers   'x-timer': 'S1489399601.059004,VS0,VE565',
+22 verbose headers   'x-cache-lookup': 'MISS from squid-p:8080',
+22 verbose headers   via: '1.1 varnish, 1.1 squid-p (squid/3.5.20)',
+22 verbose headers   connection: 'keep-alive' }
+23 silly get cb [ 404,
+23 silly get   { 'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=0',
+23 silly get     'content-length': '21',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Mon, 13 Mar 2017 10:06:41 GMT',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-hhn1524-HHN',
+23 silly get     'x-cache': 'MISS, MISS from squid-p',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1489399601.059004,VS0,VE565',
+23 silly get     'x-cache-lookup': 'MISS from squid-p:8080',
+23 silly get     via: '1.1 varnish, 1.1 squid-p (squid/3.5.20)',
+23 silly get     connection: 'keep-alive' } ]
+24 silly fetchPackageMetaData Error: Not found : @angular2/common
+24 silly fetchPackageMetaData     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+24 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+24 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:186:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:192:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:189:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+24 silly fetchPackageMetaData  error for @angular2/common { Error: Not found : @angular2/common
+24 silly fetchPackageMetaData     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+24 silly fetchPackageMetaData     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+24 silly fetchPackageMetaData     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:186:22)
+24 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:192:7)
+24 silly fetchPackageMetaData     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+24 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+24 silly fetchPackageMetaData     at Request.emit (events.js:189:7)
+24 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1001:12) pkgid: '@angular2/common', statusCode: 404, code: 'E404' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: Not found : @angular2/common
+29 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+29 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+29 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+29 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:186:22)
+29 verbose stack     at emitTwo (events.js:106:13)
+29 verbose stack     at Request.emit (events.js:192:7)
+29 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+29 verbose stack     at emitOne (events.js:96:13)
+29 verbose stack     at Request.emit (events.js:189:7)
+29 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+30 verbose statusCode 404
+31 verbose pkgid @angular2/common
+32 verbose cwd /home/klitko/www/WOXAPP/table
+33 error Linux 3.16.0-4-amd64
+34 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "@angular2/common" "--save"
+35 error node v7.5.0
+36 error npm  v4.1.2
+37 error code E404
+38 error 404 Not found : @angular2/common
+39 error 404
+40 error 404 '@angular2/common' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+42 error 404 Note that you can also install from a
+43 error 404 tarball, folder, http url, or git url.
+44 verbose exit [ 1, true ]

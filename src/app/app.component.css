@@ -1,0 +1,41 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    background: #1976D2;
+    height: 56px;
+    min-height: 56px;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+    color: white;
+}
+
+header img {
+    width: 50px;
+}
+
+header h1 {
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+section {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+

@@ -1,0 +1,31 @@
+<section>
+
+    <md-radio-group>
+        <md-radio-button value="small" (click)="getData(radio_small.value)" #radio_small>Маленький</md-radio-button>
+        <md-radio-button value="large" (click)="getData(radio_large.value)" #radio_large>Большой</md-radio-button>
+        <md-radio-button value="custom"  #radio_custom>Свой</md-radio-button>
+
+    </md-radio-group>
+    <br >
+    <md-icon>search</md-icon>
+    <md-input-container>
+        <input mdInput name="searchString" placeholder="Type to search..." [(ngModel)]="searchString">
+    </md-input-container>
+    <table class="table table-striped table-sortable">
+        <thead>
+        <tr>
+            <th *ngFor="let entry of dataTableHead | keys" (click)="changeSorting(entry.key) ">{{entry.value}}</th>
+        </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let tr of (dataTableBody  | filter : searchString)  | paginate: { itemsPerPage: 50, currentPage: p } | orderBy : convertSorting()" >
+            <td *ngFor="let td of tr" >{{td}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event" #api></pagination-controls>
+
+</section>
+
+
+
